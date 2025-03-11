@@ -22,7 +22,7 @@ function App() {
 
           {/* Private Routes */}
           <Route path="/faculty/*" element={<PrivateRoute><Faculty /></PrivateRoute>} />
-          <Route path="/student" element={<PrivateRoute><StudenLogin /></PrivateRoute>} />
+          <Route path="/student/*" element={<PrivateRoute><StudenLogin /></PrivateRoute>} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -21,6 +21,7 @@ const Login = () => {
 
       if (user) {
         localStorage.setItem("token", user.uid);
+        localStorage.setItem("role",user.role);
         // Store user name as token
         if(user.role === "student") navigate("/student");
         else

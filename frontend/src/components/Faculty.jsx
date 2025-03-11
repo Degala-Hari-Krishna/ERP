@@ -15,6 +15,7 @@ import MyStudent from "./MyStudents";
 import ScheduleSessions from "./ScheduleSessions";
 import FacultyFeedback from "./Feedback";
 import AllStudents from "./AllStudents.jsx";
+import FacultyChat from "./FacultyChat";
 
 const Faculty = () => {
   return (
@@ -127,6 +128,7 @@ const Faculty = () => {
             <Route path="schedule-session" element={<ScheduleSessions/>}/>
             <Route path="review" element={<FacultyFeedback/>}/>
             <Route path="student-profiles" element={<AllStudents/>}/>
+            <Route path="messages" element={<FacultyChat/>}/>
           </Routes>
         </div>
       </div>
