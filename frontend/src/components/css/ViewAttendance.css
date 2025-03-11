@@ -1,0 +1,137 @@
+/* Main container styling */
+.view-attendance-container {
+  max-width: 80%;
+  margin: 30px auto;
+  padding: 25px;
+  background: #f9f9f9;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+.view-attendance-container h1 {
+  color: #2c3e50;
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/* Input container in a single row */
+.view-attendance-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  margin-bottom: 20px;
+}
+
+/* Select dropdown & date input */
+.view-attendance-inputs select,
+.view-attendance-inputs input[type="date"] {
+  width: 220px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #bdc3c7;
+  font-size: 16px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.view-attendance-inputs select:focus,
+.view-attendance-inputs input[type="date"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 2px 2px 12px rgba(52, 152, 219, 0.5);
+}
+
+/* Button Styling */
+.view-attendance-inputs button {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 3px 3px 10px rgba(52, 152, 219, 0.3);
+}
+
+.view-attendance-inputs button:hover {
+  background: linear-gradient(135deg, #2980b9, #1c6ea4);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 12px rgba(52, 152, 219, 0.6);
+}
+
+/* Error message */
+.view-attendance-error {
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 16px;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 10px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Table styling */
+.view-attendance-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 25px auto;
+  border-collapse: collapse;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table header */
+.view-attendance-table th {
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
+  font-size: 18px;
+  padding: 14px;
+  text-transform: uppercase;
+}
+
+/* Table body */
+.view-attendance-table td {
+  padding: 12px;
+  font-size: 16px;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.view-attendance-table tr:nth-child(even) td {
+  background: #ecf0f1;
+}
+
+/* Hover effect on table rows */
+.view-attendance-table tr:hover td {
+  background: #d6eaf8;
+  transition: 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .view-attendance-inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .view-attendance-inputs select,
+  .view-attendance-inputs input[type="date"],
+  .view-attendance-inputs button {
+    width: 100%;
+    max-width: 400px;
+  }
+}

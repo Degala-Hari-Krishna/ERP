@@ -1,0 +1,79 @@
+.main-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .hero-radio {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+  }
+  
+  .hero-radio label {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .tiles-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .student-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+  }
+  
+  .student-tile:hover {
+    transform: scale(1.05);
+  }
+  
+  .student-tile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .student-tile p {
+    margin: 2px 0;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .Present {
+    background-color: green;
+    color: white;
+  }
+  
+  .Absent {
+    background-color: red;
+    color: white;
+  }
+  
+  .Not\ Held {
+    background-color: gray;
+    color: white;
+  }
+  

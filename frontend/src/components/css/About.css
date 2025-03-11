@@ -1,0 +1,106 @@
+/* General Styles */
+.about_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about_image {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about_text {
+    max-width: 600px;
+    padding-left: 2rem;
+}
+
+.about_text h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about_text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Mission & Vision Section */
+.mission_vision {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.mission_vision h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.mission_vision_content {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.mission, .vision {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.mission:hover, .vision:hover {
+    transform: scale(1.05);
+}
+
+/* Core Values */
+.values {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.values h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin: 0.5rem auto;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.values li:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

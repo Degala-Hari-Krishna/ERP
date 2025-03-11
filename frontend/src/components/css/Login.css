@@ -1,0 +1,92 @@
+/* Centering the login container */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f4f4f4;
+}
+
+/* Login Box */
+.login-box {
+    padding: 20px;
+    border: 2px solid black;
+    width: 320px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.login-box input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Login button */
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    background-color: darkblue;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Forgot password */
+.forgot-password {
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Info box (for additional information) */
+.info-box {
+    padding: 20px;
+    border: 2px solid black;
+    width: 320px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-box h2 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 14px;
+    color: #333;
+}

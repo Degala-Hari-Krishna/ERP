@@ -1,0 +1,226 @@
+/* Faculty Dashboard */
+.faculty-dashboard {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Section for Calendar + Extra Info */
+.calendar-and-extras {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  gap: 1.5rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 📆 Calendar */
+.calendar-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-calendar {
+  width: 100%;
+  border: none;
+  font-family: Arial, sans-serif;
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.react-calendar__tile {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.react-calendar__tile--active {
+  background: #007bff;
+  color: white;
+}
+
+.react-calendar__tile:hover {
+  background: #e6f0ff;
+}
+
+/* 📢 Extra Sections (Events, Announcements, etc.) */
+.extra-section {
+  flex: 1;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extra-section h3 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.extra-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.extra-section li {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.extra-section li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .calendar-and-extras {
+    flex-direction: column;
+  }
+}
+
+/* Dashboard Header */
+.dashboard-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  width: 94%;
+  height: 2rem;
+}
+
+/* Stats Grid */
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Stats Cards */
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Today's Classes */
+.todays-classes {
+  margin-top: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.todays-classes h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.todays-classes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todays-classes li {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.todays-classes li:last-child {
+  border-bottom: none;
+}
+
+/* Recent Activity */
+.recent-activity {
+  margin-top: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Announcements */
+.announcements {
+  margin-top: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.announcements h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faculty-dashboard {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

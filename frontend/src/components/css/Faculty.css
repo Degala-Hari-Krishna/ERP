@@ -1,0 +1,83 @@
+.faculty-container {
+  margin-top: 5rem;
+  display: flex;
+}
+
+/* Sidebar Menu */
+.menu {
+  width: 240px;
+  height: calc(100vh - 5rem); /* Adjusted to fit below navbar */
+  background-color: #f8f9fa;
+  padding: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 5rem; /* Set it exactly below navbar */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Fixed Header (MENU) */
+.menu h4 {
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Scrollable Menu List */
+.menu ul {
+  list-style-type: none;
+  padding: 10px 0;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Minimal Scrollbar */
+.menu ul::-webkit-scrollbar {
+  width: 4px;
+}
+
+.menu ul::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+/* Menu Items */
+.menu li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition: 0.3s ease;
+  width: 100%;
+}
+
+/* Active Link Highlight */
+.menu .active {
+  background-color: #007bff;
+  color: white !important;
+}
+
+.content
+{
+  margin-left: 260px;
+  width: 100%;
+}
